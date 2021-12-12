@@ -1,0 +1,51 @@
+:root {
+	--toolbar-height: 4rem;
+}
+
+.collapsible-toolbar {
+	height: var(--toolbar-height);
+	width:100vw;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:10;
+}
+
+.toolbar {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #efefef !important;
+}
+
+.toolbar > .title {
+	flex:1;
+	font-size: 1.7rem;
+	user-select:none;
+	cursor:pointer;
+}
+
+#searchInput {
+	flex:1;
+	height:36px;
+	max-width:400px;
+	border:none;
+	outline:none;
+	border-radius:2px;
+	padding:0 8px;
+	margin-right:3px;
+	margin-left:8px;
+	color:#555;
+}
+
+main {
+	padding-top:calc(var(--toolbar-height) + 8px);
+}
+
+#opening img {
+	height:250px;
+	width:100%;
+	object-fit: contain;
+	object-position: center;
+}
